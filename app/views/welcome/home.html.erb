@@ -1,8 +1,9 @@
 <div class="navbar">
-    <%= image_tag "airbnb-logo.jpeg" %>
+
     <div class="links">
       <%= link_to "Sign Up", new_user_registration_path %>
       <%= link_to "Log In", new_user_session_path %>
+      <%# <%= image_tag()%>
     </div>
 </div>
 
@@ -17,15 +18,13 @@
     <div class="cards">
 
       <div class="card">
-        <%= image_tag "earth_planet.jpeg" %>
-
+          <%= cl_image_tag("az3y4t264gk34bbytpni", width: 400, height: 300, crop: :fill) %>
           <h4><b>Earth</b></h4>
           <p>It has a solid and active surface with mountains, valleys, canyons, plains and so much more</p>
-
       </div>
 
       <div class="card">
-        <%= image_tag "saturn_planet.jpeg" %>
+
 
           <h4><b>Saturn</b></h4>
           <p>It is circled by hundreds of rings consisting of small, ice-covered particles and is also host to at least 30 moons</p>
@@ -33,7 +32,7 @@
       </div>
 
       <div class="card">
-        <%= image_tag "jupiter_planet" %>
+
 
           <h4><b>Jupiter</b></h4>
           <p>Jupiter is covered in swirling cloud stripes. It has big storms like the Great Red Spot, which has been going for hundreds of years</p>
