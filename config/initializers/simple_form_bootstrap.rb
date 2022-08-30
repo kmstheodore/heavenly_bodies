@@ -41,9 +41,8 @@ SimpleForm.setup do |config|
 
   # add validation classes to `input_field`
   config.input_field_error_class = 'is-invalid'
+
   config.input_field_valid_class = 'is-valid'
-
-
   # vertical forms
   #
   # vertical default_wrapper

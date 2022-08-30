@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  get 'sessions/new'
+  get 'welcome/home'
+
+  root to: 'welcome#home'
 
   get '/signup', to: "users#new"
   get '/signin', to: "sessions#new"
