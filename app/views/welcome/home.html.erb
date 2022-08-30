@@ -1,3 +1,54 @@
-<h1>Pages#home</h1>
+<div class="navbar">
+    <%= image_tag "airbnb-logo.jpeg" %>
+    <div class="links">
+      <%= link_to "Sign Up", new_user_registration_path %>
+      <%= link_to "Log In", new_user_session_path %>
+    </div>
+</div>
 
-<img src="earth_planet.jpeg" style="width: 600px;margin:auto" />
+<div class="main">
+  <div class="card-container">
+    <h2> What we do </h2>
+    <p>HeavenlyBodies, Inc. is an English company that operates an online marketplace for lodging, primarily planets for vacation rentals, and tourism activities.</p>
+  </div>
+
+  <div class="card-container">
+    <h2>Most Popular</h2>
+    <div class="cards">
+
+      <div class="card">
+        <%= image_tag "earth_planet.jpeg" %>
+
+          <h4><b>Earth</b></h4>
+          <p>It has a solid and active surface with mountains, valleys, canyons, plains and so much more</p>
+
+      </div>
+
+      <div class="card">
+        <%= image_tag "saturn_planet.jpeg" %>
+
+          <h4><b>Saturn</b></h4>
+          <p>It is circled by hundreds of rings consisting of small, ice-covered particles and is also host to at least 30 moons</p>
+
+      </div>
+
+      <div class="card">
+        <%= image_tag "jupiter_planet" %>
+
+          <h4><b>Jupiter</b></h4>
+          <p>Jupiter is covered in swirling cloud stripes. It has big storms like the Great Red Spot, which has been going for hundreds of years</p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-container">
+    <h2>About Us</h2>
+    <p>Le Wagon Demo Project</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2022 HeavenlyBodies, Inc.</p>
+</div>
