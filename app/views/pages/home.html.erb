@@ -1,0 +1,21 @@
+<div class="navbar">
+    <%= image_tag "https://res.cloudinary.com/do31e5zv5/image/upload/v1661868478/ttbc5db2veypvqwtdadm.jpg" %>
+    <h1>Heavenly Bodies</h1>
+    <div class="links">
+      <%= link_to "Sign Up", new_user_registration_path %>
+      <%= link_to "Log In", new_user_session_path %>
+      <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+    </div>
+</div>
+
+<div class="main">
+  <% if user_signed_in? %>
+    <%= render "Shared/marketplace" %>
+  <% else %>
+    <%= render "Shared/homepage" %>
+  <% end %>
+</div>
+
+<div class="footer">
+  <p>© 2022 HeavenlyBodies, Inc.</p>
+</div>
