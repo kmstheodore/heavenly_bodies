@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   get '/logout', to: "sessions#destroy"
   post '/users/:id', to: "users#update"
   get '/auth/facebook/callback' => 'sessions#create'
+  # Theo's code
+  get 'welcome/marketplace', to: "welcome#marketplace"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

@@ -1,0 +1,76 @@
+<style>
+.system-flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+.system-flex-container > .x {
+  background-color: #f1f1f1;
+  width: 150px;
+  height: 120px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+  border-radius: 50%
+}
+.bottom-2-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: Blue;
+  margin-top: 20px;
+  height: 400px;
+}
+.bottom-2-cards > #booking-card {
+  background-color: #f1f1f1;
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+.bottom-2-cards > #desc-card {
+  background-color: #f1f1f1;
+  width: 1000px;
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>🚀 Hover for info 🚀 </h1>
+</div>
+
+<div class="system-flex-container">
+  <div class="x">Sun</div>
+  <div class="x">Mercruy</div>
+  <div class="x">Venus</div>
+  <div class="x">Earth</div>
+  <div class="x">Mars</div>
+  <div class="x">Jupiter</div>
+  <div class="x">Uranus</div>
+  <div class="x">Neptune</div>
+  <div class="x">Pluto</div>
+</div>
+
+
+<div class="bottom-2-cards">
+  <div id="booking-card">
+  <p>booking<p>
+  </div>
+  <div id="desc-card">
+  <p>planet desc</p>
+  </div>
+
+</div>
+</body>
+<ul>
+  <% @planets.each do |planet| %>
+    <li><%= planet.name %></li>
+  <% end %>
+</ul>
