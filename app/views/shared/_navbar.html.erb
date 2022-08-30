@@ -1,0 +1,45 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container-fluid">
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "https://res.cloudinary.com/do31e5zv5/image/upload/v1661868478/ttbc5db2veypvqwtdadm.jpg" %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <h1>Heavenly Bodies</h1>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to "/",  class: "nav-link", style: "font-size:larger" do %>
+              <i class="fa-solid fa-bell"></i> Notifications
+            <% end %>
+          </li>
+          <li class="nav-item dropdown">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/jcpiette", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li>
+                <%= link_to edit_user_registration_path, class: "dropdown-item" do %>
+                  <i class="fa-solid fa-user-gear"></i>
+                  Settings
+                <% end %>
+              </li>
+              <li><hr class="dropdown-divider"></li>
+              <li>
+                <%= link_to destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" do %>
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  Log out
+                <% end %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li class="nav-item">
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-outline-danger" %>
+            <%= link_to "Login", new_user_session_path, class: "btn btn-danger" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

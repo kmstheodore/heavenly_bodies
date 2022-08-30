@@ -1,36 +1,10 @@
 // Specific CSS for your home-page
 
-.navbar {
-  justify-content: space-between;
-  background-color: white;
-  height: 75px;
-  border-bottom: lightgray;
-  margin-bottom: 50px;
-}
-
-.navbar img{
-  width: 75px;
-  height: 50px;
-  margin-left: 10px;
-}
-
-p {
-  text-decoration: none;
-}
-
-.links {
-  display: inline;
-}
-
-a {
-  margin: 10px;
-}
-
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   background-color: white;
   border-top: lightgray;
   font-size: smaller;
