@@ -1,5 +1,6 @@
 <div class="navbar">
-
+    <%= cl_image_tag("ttbc5db2veypvqwtdadm", width: 400, height: 300, crop: :fill) %>
+    <h1>Heavenly Bodies</h1>
     <div class="links">
       <%= link_to "Sign Up", new_user_registration_path %>
       <%= link_to "Log In", new_user_session_path %>
@@ -24,19 +25,15 @@
       </div>
 
       <div class="card">
-
-
+          <%= cl_image_tag("zkthm6cbtvzaianuwup7", width: 400, height: 300, crop: :fill) %>
           <h4><b>Saturn</b></h4>
           <p>It is circled by hundreds of rings consisting of small, ice-covered particles and is also host to at least 30 moons</p>
-
       </div>
 
       <div class="card">
-
-
+          <%= cl_image_tag("b4ffalqu559lb66n2itb", width: 400, height: 300, crop: :fill) %>
           <h4><b>Jupiter</b></h4>
           <p>Jupiter is covered in swirling cloud stripes. It has big storms like the Great Red Spot, which has been going for hundreds of years</p>
-
       </div>
 
     </div>
