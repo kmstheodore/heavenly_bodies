@@ -1,3 +1,4 @@
+# Test co;;ent
 class UsersController < ApplicationController
   def new
     @user = User.new
