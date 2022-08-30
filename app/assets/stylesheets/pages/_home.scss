@@ -1,1 +1,66 @@
 // Specific CSS for your home-page
+
+.navbar {
+  justify-content: space-between;
+  background-color: white;
+  height: 75px;
+  border-bottom: lightgray;
+  margin-bottom: 50px;
+}
+
+.navbar img{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+p {
+  text-decoration: none;
+}
+
+.links {
+  display: inline;
+}
+
+a {
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-top: lightgray;
+  font-size: smaller;
+  height: 75px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 50px;
+}
+
+.card {
+  box-shadow: 2px 2px 5px lightgray;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  font-size: smaller;
+  border-radius: 5px;
+}
+
+.card img{
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5%;
+}
