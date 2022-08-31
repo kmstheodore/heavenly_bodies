@@ -5,8 +5,7 @@
   <div class="dashboard-container">
     <div class="dashboard">
       <div id="booking-card">
-        <p>Your Upcoming Trips<p>
-        <h2>Name:<%=@booking.user_id%></h2>
+        <h2>Your Upcoming Trips <%=current_user.first_name%></h2>
         <table class="table table-striped" style="overflow-y: scroll; height: 62vh;">
           <thead>
             <tr>
