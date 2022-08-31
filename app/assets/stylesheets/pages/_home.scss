@@ -44,7 +44,7 @@
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: 700px;
   width: 100%;
   align-items: center;
 }
@@ -55,9 +55,6 @@
   text-align: center;
   line-height: 75px;
   font-size: 15px;
-
-
-
 }
 
 .planet > img {
@@ -65,14 +62,15 @@
   width: 150px;
   border-radius: 50%;
   background-size: auto;
-
 }
+
 .dashboard {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
   height: 80vh;
 }
+
 .dashboard > #booking-card {
   border-style: solid;
   border-radius: 15px;
@@ -84,8 +82,8 @@
   line-height: 75px;
   font-size: 15px;
 }
-.dashboard > #desc-card {
 
+.dashboard > #desc-card {
   background-color: #F1F1F1;
   width: 1000px;
   margin: 10px;
@@ -95,6 +93,7 @@
   line-height: 75px;
   font-size: 15px;
 }
+
 #instructions {
   text-align: center;
 }
