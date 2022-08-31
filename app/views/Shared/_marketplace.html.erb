@@ -6,16 +6,26 @@
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
+  align-items: center;
 }
 .system-flex-container > .planet {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 25px 25px 25px 20px;
   text-align: center;
   line-height: 75px;
   font-size: 15px;
+
+
+
+}
+
+.planet > img {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
-  border-style: solid;
+  background-size: auto;
+
 }
 .dashboard {
   display: flex;
@@ -57,12 +67,17 @@
 <div class="dashboard-container">
 <div class="dashboard">
   <div id="booking-card">
-  <p>booking<p>
+  <p>Your Upcoming Trips<p>
+  <h2>Name:<%=@booking.user_id%></h2>
   </div>
   <div id="desc-card">
   <div class="system-flex-container">
   <% @planets.each do |planet| %>
-    <div class="planet"><%=link_to "#{planet.name}", planet_path(planet)%></div>
+    <div class="planet">
+    <%=link_to "#{planet.name}", planet_path(planet)%>
+    <%= image_tag "#{planet.image}"%>
+
+    </div>
   <% end %>
 </div>
   </div>
