@@ -2,20 +2,7 @@
 
   <%= simple_form_for(@booking, url: planet_bookings_path(@planet, @booking), data: {turbo: false}) do |f| %>
     <%= f.error_notification %>
-<style>
-.section {
-	position: relative;
-	height: 100vh;
-}
 
-.section .section-center {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
 
 #booking {
 	font-family: 'Montserrat', sans-serif;
@@ -142,7 +129,6 @@
 	color: rgba(255, 255, 255, 0.8);
 }
 </style>
-
 
 	<div id="booking" class="section">
 		<div class="section-center">
