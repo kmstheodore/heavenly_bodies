@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
 
   # GET /bookinges or /bookinges.json
   def index
-    @bookinges = booking.where(user_id: current_user.id)
+    @bookinges = Booking.where(user_id: current_user.id)
   end
 
   # GET /bookinges/1 or /bookinges/1.json
@@ -12,7 +12,7 @@ class BookingsController < ApplicationController
 
   # GET /bookinges/new
   def new
-    @booking = booking.new
+    @booking = Booking.new
   end
 
   # GET /bookinges/1/edit
@@ -21,7 +21,8 @@ class BookingsController < ApplicationController
 
   # POST /bookinges or /bookinges.json
   def create
-    @booking = booking.new(booking_params)
+    @booking = Booking.new(booking_params)
+    @booking.user_id = current_user.id
 
     respond_to do |format|
       if @booking.save
