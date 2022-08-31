@@ -38,3 +38,63 @@
   padding: 10px;
   border-radius: 5%;
 }
+
+.system-flex-container {
+  border-style: solid;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.system-flex-container > .planet {
+  width: 150px;
+  height: 150px;
+  margin: 25px 25px 25px 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+
+
+
+}
+
+.planet > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-size: auto;
+
+}
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 80vh;
+}
+.dashboard > #booking-card {
+  border-style: solid;
+  border-radius: 15px;
+  background-color: #F1F1F1;
+  width: 30%;
+  margin: 10px;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+.dashboard > #desc-card {
+
+  background-color: #F1F1F1;
+  width: 1000px;
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+#instructions {
+  text-align: center;
+}

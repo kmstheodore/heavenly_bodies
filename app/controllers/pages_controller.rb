@@ -3,5 +3,6 @@ class PagesController < ApplicationController
   def home
     @planets = Planet.all
     @booking = Booking.new
+    @bookings = Booking.all
   end
 end

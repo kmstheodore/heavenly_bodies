@@ -1,86 +1,43 @@
-<style>
-.system-flex-container {
-  border-style: solid;
-  border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-}
-.system-flex-container > .planet {
-  width: 150px;
-  height: 150px;
-  margin: 25px 25px 25px 20px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 15px;
-
-
-
-}
-
-.planet > img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background-size: auto;
-
-}
-.dashboard {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-  height: 80vh;
-}
-.dashboard > #booking-card {
-  border-style: solid;
-  border-radius: 15px;
-  background-color: #F1F1F1;
-  width: 30%;
-  margin: 10px;
-  margin-left: 50px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 15px;
-}
-.dashboard > #desc-card {
-
-  background-color: #F1F1F1;
-  width: 1000px;
-  margin: 10px;
-  margin-left: 50px;
-  margin-right: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 15px;
-}
-#instructions {
-  text-align: center;
-}
-</style>
-</head>
 <body>
-<div>
-<h2 id='instructions'>🚀 Click for info 🚀</h2>
-</div>
-<div class="dashboard-container">
-<div class="dashboard">
-  <div id="booking-card">
-  <p>Your Upcoming Trips<p>
-  <h2>Name:<%=@booking.user_id%></h2>
+  <div>
+    <h2 id='instructions'>🚀 Click for info 🚀</h2>
   </div>
-  <div id="desc-card">
-  <div class="system-flex-container">
-  <% @planets.each do |planet| %>
-    <div class="planet">
-    <%=link_to "#{planet.name}", planet_path(planet)%>
-    <%= image_tag "#{planet.image}"%>
-
+  <div class="dashboard-container">
+    <div class="dashboard">
+      <div id="booking-card">
+        <p>Your Upcoming Trips<p>
+        <h2>Name:<%=@booking.user_id%></h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">Planet</th>
+              <th scope="col">Start Date</th>
+              <th scope="col">End Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @bookings.each do |book| %>
+            <tr>
+              <th scope="row"><%= book.id%></th>
+              <td><%= book.planet.name %></td>
+              <td><%= book.start_date %></td>
+              <td><%= book.end_date %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div id="desc-card">
+        <div class="system-flex-container">
+        <% @planets.each do |planet| %>
+          <div class="planet">
+          <%=link_to "#{planet.name}", planet_path(planet)%>
+          <%= image_tag "#{planet.image}"%>
+          </div>
+        <% end %>
+        </div>
+      </div>
     </div>
-  <% end %>
-</div>
   </div>
-</div>
-</div>
 </body>
