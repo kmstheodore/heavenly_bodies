@@ -15,15 +15,14 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
-  # GET /bookinges/1/edit
-  def edit
-  end
-
   # POST /bookinges or /bookinges.json
   def create
-    @booking = Booking.new(booking_params)
+    @booking = Booking.new
     @booking.user_id = current_user.id
     @booking.planet_id = params[:planet_id]
+    @booking.start_date = params[:start_date]
+    @booking.end_date = params[:end_date]
+
 
     respond_to do |format|
       if @booking.save
@@ -36,18 +35,7 @@ class BookingsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /bookinges/1 or /bookinges/1.json
-  def update
-    respond_to do |format|
-      if @booking.update(booking_params)
-        format.html { redirect_to booking_url(@booking), notice: "booking was successfully updated." }
-        format.json { render :show, status: :ok, location: @booking }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @booking.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+
 
   # DELETE /bookinges/1 or /bookinges/1.json
   def destroy
@@ -66,7 +54,5 @@ class BookingsController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def booking_params
-      params.require(:booking).permit(:start_date, :end_date, :planet_id, :user_id)
-    end
+
 end
