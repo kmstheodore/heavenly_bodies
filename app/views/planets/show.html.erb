@@ -8,7 +8,7 @@
 
 <div id="booking">
   <h2>Book a Planet</h2>
-  <%= simple_form_for(@booking, url: booking_new_path(@booking), data: {turbo: false}) do |f| %>
+  <%= simple_form_for(@booking, url: planet_bookings_path(@planet, @booking), data: {turbo: false}) do |f| %>
     <%= f.error_notification %>
 
     <div class="form-inputs">

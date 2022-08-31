@@ -3,7 +3,7 @@ class BookingsController < ApplicationController
 
   # GET /bookinges or /bookinges.json
   def index
-    @bookings = Booking.where(user_id: current_user.id)
+    @bookinges = Booking.where(user_id: current_user.id)
   end
 
   # GET /bookinges/1 or /bookinges/1.json
@@ -22,13 +22,14 @@ class BookingsController < ApplicationController
   # POST /bookinges or /bookinges.json
   def create
     @booking = Booking.new(booking_params)
+    @booking.user_id = current_user.id
 
     respond_to do |format|
       if @booking.save
         format.html { redirect_to booking_url(@booking), notice: "booking was successfully created." }
         format.json { render :show, status: :created, location: @booking }
       else
-        format.html { redirect_to root_path, status: :unprocessable_entity }
+        format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @booking.errors, status: :unprocessable_entity }
       end
     end
