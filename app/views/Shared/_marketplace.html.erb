@@ -46,15 +46,9 @@
 <h1>:rocket: Hover for info :rocket: </h1>
 </div>
 <div class="system-flex-container">
-  <div class="x">Sun</div>
-  <div class="x">Mercruy</div>
-  <div class="x">Venus</div>
-  <div class="x">Earth</div>
-  <div class="x">Mars</div>
-  <div class="x">Jupiter</div>
-  <div class="x">Uranus</div>
-  <div class="x">Neptune</div>
-  <div class="x">Pluto</div>
+  <% @planets.each do |planet| %>
+    <div class="x"><%=link_to "#{planet.name}", planet_path(planet)%></div>
+  <% end %>
 </div>
 <div class="bottom-2-cards">
   <div id="booking-card">
@@ -67,6 +61,6 @@
 </body>
 <ul>
   <% @planets.each do |planet| %>
-    <li><%= planet.name %></li>
+    <div><%= planet.name%></div>
   <% end %>
 </ul>
