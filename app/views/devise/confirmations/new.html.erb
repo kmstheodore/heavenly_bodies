@@ -17,4 +17,13 @@
   </div>
 <% end %>
 
+
+  <%= form_for @booking do |f| %>
+    <%= f.label "Notes" %>
+    <%= f.text_area :description %>
+    <%= f.label "Paid?"%>
+    <%= f.check_box :paid %>
+    <%= f.submit %>
+  <% end %>
+
 <%= render "devise/shared/links" %>

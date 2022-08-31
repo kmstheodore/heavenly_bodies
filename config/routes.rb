@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :bookings
 
   resources :planets, only: [:show] do
     resources :bookings, only: [:create]
