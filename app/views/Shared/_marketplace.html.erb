@@ -1,35 +1,41 @@
 <style>
 .system-flex-container {
+  border-style: solid;
+  border-radius: 15px;
   display: flex;
-  flex-wrap: nowrap;
-  background-color: DodgerBlue;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
 }
-.system-flex-container > .x {
-  background-color: #F1F1F1;
-  width: 150px;
-  height: 120px;
-  margin: 10px;
+.system-flex-container > .planet {
+  width: 200px;
+  height: 200px;
+  margin: 25px 25px 25px 20px;
   text-align: center;
   line-height: 75px;
   font-size: 15px;
-  border-radius: 50%
+  border-radius: 50%;
+  border-style: solid;
 }
-.bottom-2-cards {
+.dashboard {
   display: flex;
-  flex-wrap: nowrap;
-  background-color: Blue;
+  flex-wrap: wrap;
   margin-top: 20px;
-  height: 400px;
+  height: 80vh;
 }
-.bottom-2-cards > #booking-card {
+.dashboard > #booking-card {
+  border-style: solid;
+  border-radius: 15px;
   background-color: #F1F1F1;
-  width: 300px;
+  width: 30%;
   margin: 10px;
+  margin-left: 50px;
   text-align: center;
   line-height: 75px;
   font-size: 15px;
 }
-.bottom-2-cards > #desc-card {
+.dashboard > #desc-card {
+
   background-color: #F1F1F1;
   width: 1000px;
   margin: 10px;
@@ -39,28 +45,27 @@
   line-height: 75px;
   font-size: 15px;
 }
+#instructions {
+  text-align: center;
+}
 </style>
 </head>
 <body>
 <div>
-<h1>:rocket: Hover for info :rocket: </h1>
+<h2 id='instructions'>🚀 Click for info 🚀</h2>
 </div>
-<div class="system-flex-container">
-  <% @planets.each do |planet| %>
-    <div class="x"><%=link_to "#{planet.name}", planet_path(planet)%></div>
-  <% end %>
-</div>
-<div class="bottom-2-cards">
+<div class="dashboard-container">
+<div class="dashboard">
   <div id="booking-card">
   <p>booking<p>
   </div>
   <div id="desc-card">
-  <p>planet desc</p>
+  <div class="system-flex-container">
+  <% @planets.each do |planet| %>
+    <div class="planet"><%=link_to "#{planet.name}", planet_path(planet)%></div>
+  <% end %>
+</div>
   </div>
 </div>
+</div>
 </body>
-<ul>
-  <% @planets.each do |planet| %>
-    <div><%= planet.name%></div>
-  <% end %>
-</ul>
