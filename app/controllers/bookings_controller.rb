@@ -27,7 +27,7 @@ class BookingsController < ApplicationController
       if @booking.save
         format.html { redirect_to root_path, notice: "booking was successfully created." }
       else
-        format.html { redirect_to planet_path(Planet.find(@booking.planet_id)), notice: @booking.errors[:planet_id] }
+        format.html { redirect_to planet_path(Planet.find(@booking.planet_id)), notice: @booking.errors }
       end
     end
   end
