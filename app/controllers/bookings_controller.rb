@@ -23,19 +23,14 @@ class BookingsController < ApplicationController
     @booking.start_date = params[:start_date]
     @booking.end_date = params[:end_date]
 
-
     respond_to do |format|
       if @booking.save
         format.html { redirect_to root_path, notice: "booking was successfully created." }
-        format.json { render :show, status: :created, location: @booking }
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @booking.errors, status: :unprocessable_entity }
+        format.html { redirect_to planet_path(Planet.find(@booking.planet_id)), notice: @booking.errors }
       end
     end
   end
-
-
 
   # DELETE /bookinges/1 or /bookinges/1.json
   def destroy
@@ -48,11 +43,9 @@ class BookingsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_booking
-      @booking = booking.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-
+  # Use callbacks to share common setup or constraints between actions.
+  def set_booking
+    @booking = booking.find(params[:id])
+  end
 end

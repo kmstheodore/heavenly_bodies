@@ -1,0 +1,86 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 50px;
+}
+
+.card {
+  box-shadow: 2px 2px 5px lightgray;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  font-size: smaller;
+  border-radius: 5px;
+}
+
+.card img{
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.system-flex-container {
+  border-style: solid;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 100%;
+  align-items: center;
+}
+.system-flex-container > .planet {
+  width: 150px;
+  margin: 25px 25px 25px 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+
+.planet > img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-size: auto;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  height: 80vh;
+}
+
+.dashboard > #booking-card {
+  border-style: solid;
+  border-radius: 15px;
+  background-color: #F1F1F1;
+  width: 30vh;
+  margin: 10px;
+  margin-left: 50px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+
+.dashboard > #desc-card {
+  background-color: #F1F1F1;
+  width: 1000px;
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 15px;
+}
+
+#instructions {
+  text-align: center;
+}
+table  { margin-top:  20px; display: inline-block; overflow: auto; }

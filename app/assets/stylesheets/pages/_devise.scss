@@ -1,0 +1,87 @@
+.page {
+  height: 100vh;
+  padding: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://res.cloudinary.com/do31e5zv5/image/upload/v1662026707/mxrdxit7hp8oxitrjtgo.jpg);
+}
+
+.form {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 650px;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  font-size: medium;
+  border-color: #212529;
+  box-shadow: 5px 10px #2b3035;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-weight: bold;
+  color: #212529;
+
+}
+
+.simple-form {
+  font-size: medium;
+}
+
+.form-inputs {
+  width: 500px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-btn {
+  border-style: solid;
+  border-color: #212529;
+  border-radius: 10px;
+  font-size: large;
+  color: #212529;
+}
+
+.form-btn:hover {
+  background-color: #212529;
+  color: white;
+}
+
+.flash {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.flash-success {
+  border: 2px solid #1EDD88;
+}
+
+.flash-warning {
+  border: 2px solid #FFC65A;
+}
+
+.flash-danger {
+  border: 2px solid #FD1015;
+}

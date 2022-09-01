@@ -1,17 +1,16 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "/", class: "navbar-brand" do %>
-      <%= image_tag "https://res.cloudinary.com/do31e5zv5/image/upload/v1661868478/ttbc5db2veypvqwtdadm.jpg" %>
-    <% end %>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-      <h1>Heavenly Bodies</h1>
+      <%= link_to "/", class: "navbar-brand" do %>
+        <i class="fa-solid fa-rocket"></i> <h1 class="nav-title">Heavenly Bodies</h1>
+      <% end %>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/jcpiette", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%= image_tag "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1662030685/kgxnkhhd3odr2xjcxw5z.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li>
                 <%= link_to   new_planet_path, class: "dropdown-item" do %>
@@ -39,8 +38,8 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-outline-danger" %>
-            <%= link_to "Login", new_user_session_path, class: "btn btn-danger" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "nav-button" %>
+            <%= link_to "Login", new_user_session_path, class: "nav-button" %>
           </li>
         <% end %>
       </ul>
