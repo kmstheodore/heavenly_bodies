@@ -3,7 +3,7 @@
 @import "marketplace";
 
 #booking {
-	font-family: 'Montserrat', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	background-size: cover;
 	background-position: center;
 }
@@ -23,7 +23,7 @@
 	padding: 50px 20px;
 	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
 	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
-	border-radius: 4px;
+	border-radius: 10px;
 }
 
 .booking-form .form-group {
@@ -38,7 +38,7 @@
 	height: 40px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	color: black;
+	color: rgba(62, 72, 92, 0.3);
 	font-size: 14px;
 }
 
