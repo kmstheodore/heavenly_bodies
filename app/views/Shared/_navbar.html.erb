@@ -1,12 +1,12 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
     <%= link_to "/", class: "navbar-brand" do %>
-      <%= image_tag "https://res.cloudinary.com/do31e5zv5/image/upload/v1661868478/ttbc5db2veypvqwtdadm.jpg" %>
+      <i class="fa-solid fa-rocket"></i>
     <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-      <h1>Heavenly Bodies</h1>
+      <h1 class="nav-title">Heavenly Bodies</h1>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
@@ -30,8 +30,8 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-outline-danger" %>
-            <%= link_to "Login", new_user_session_path, class: "btn btn-danger" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "nav-button" %>
+            <%= link_to "Login", new_user_session_path, class: "nav-button" %>
           </li>
         <% end %>
       </ul>
