@@ -1,0 +1,18 @@
+
+<h2>Add planet</h2>
+
+<%= simple_form_for @planet do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, required: true, autofocus: true %>
+    <%= f.input :price, required: true %>
+    <%= f.input :desc, required: true %>
+    <%= f.input :image, as: :file %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Add Planet" %>
+  </div>
+<% end %>
+
