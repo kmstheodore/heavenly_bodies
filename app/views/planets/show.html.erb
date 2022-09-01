@@ -2,7 +2,7 @@
 <%= simple_form_for(@booking, url: planet_bookings_path(@planet, @booking), data: {turbo: false}) do |f| %>
   <%= f.error_notification %>
 
-<div id="booking" class="section" style="Background-image: url(<%= @planet.image%>)">
+<div id="booking" class="section" style="Background-image: url('<%= cl_image_path @planet.photo.key %>')">
   <div class="section-center">
     <div class="container">
       <div class="row">
@@ -44,4 +44,3 @@
   </div>
 </div>
 <% end %>
-
