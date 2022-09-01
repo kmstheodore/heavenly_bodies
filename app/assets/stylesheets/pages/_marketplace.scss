@@ -7,7 +7,7 @@
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   background-color: #212529
 
 }
@@ -121,16 +121,6 @@ table  {
   object-fit: cover;
 }
 
-.card-product  > #odometer {
-  background-color: grey;
-  color: white;
-  text-align: center;
-  font-size: 45px;
-  width: 45%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .card-product h2 {
   font-size: 37px;
   font-weight: bold;
@@ -145,6 +135,19 @@ table  {
   margin-bottom: 0;
   margin-top: 8px;
   color:#212529
+}
+
+.card-product  > #odometer {
+  background-color: #212529;
+  color: white;
+  border: 5px solid white;
+  text-align: center;
+  font-size: 45px;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  margin-top: 0px;
 }
 
 .card-product .card-product-infos {
