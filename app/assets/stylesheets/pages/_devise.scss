@@ -1,10 +1,10 @@
 .page {
-  background-image: radial-gradient(yellow, orange,#8A1686);
   height: 100vh;
   padding: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(https://res.cloudinary.com/do31e5zv5/image/upload/v1662026707/mxrdxit7hp8oxitrjtgo.jpg);
 }
 
 .form {
@@ -15,10 +15,11 @@
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   border-style: solid;
-  border-color: white;
   border-radius: 10px;
-  font-size: medium;
   background-color: white;
+  font-size: medium;
+  border-color: #212529;
+  box-shadow: 5px 10px #2b3035;
 }
 
 .title {
@@ -30,7 +31,7 @@
 
 h2 {
   font-weight: bold;
-  color: purple;
+  color: #212529;
 
 }
 
@@ -51,14 +52,14 @@ h2 {
 
 .form-btn {
   border-style: solid;
-  border-color: purple;
+  border-color: #212529;
   border-radius: 10px;
   font-size: large;
-  color: purple;
+  color: #212529;
 }
 
 .form-btn:hover {
-  background-color: purple;
+  background-color: #212529;
   color: white;
 }
 
