@@ -1,6 +1,6 @@
 <body>
   <div>
-    <h2 id='instructions'>🚀 Click for info 🚀</h2>
+
   </div>
   <div class="dashboard-container">
     <div class="dashboard">
@@ -31,8 +31,9 @@
         <div class="system-flex-container">
         <% @planets.each do |planet| %>
           <div class="planet">
-          <%=link_to "#{planet.name}", planet_path(planet)%>
-          <%= image_tag "#{planet.image}"%>
+          <%=link_to planet_path(planet) do %>
+           <%= image_tag "#{planet.image}"%>
+           <%end%>
           </div>
         <% end %>
         </div>
