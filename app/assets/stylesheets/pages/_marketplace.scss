@@ -7,7 +7,17 @@
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 3px;
+  background-color: #212529
+
+}
+
+.card-container p{
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .card {
@@ -28,22 +38,23 @@
 
 .system-flex-container {
   border-style: solid;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   height: 600px;
   width: 100%;
-  align-items: center;
-}
+  overflow-y: hidden;
+ }
+
 .system-flex-container > .planet {
   width: 150px;
-  margin: 25px 25px 25px 20px;
+  margin: 30px;
   text-align: center;
   line-height: 75px;
   font-size: 15px;
 }
 
-.planet > img {
+.planet > a > img {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -53,24 +64,27 @@
 .dashboard {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 20px;
   height: 80vh;
+  background-color: black;
 }
 
 .dashboard > #booking-card {
   border-style: solid;
   border-radius: 15px;
   background-color: #F1F1F1;
-  width: 30vh;
+  width: 45vh;
   margin: 10px;
-  margin-left: 50px;
+  margin-left: 30px;
   text-align: center;
   line-height: 75px;
   font-size: 15px;
+  box-shadow: 2px 2px 2px lightgray;
+  padding-top: 20px;
+  color: #212529;
 }
 
 .dashboard > #desc-card {
-  background-color: #F1F1F1;
+  background-color: black;
   width: 1000px;
   margin: 10px;
   margin-left: 50px;
@@ -78,9 +92,68 @@
   text-align: center;
   line-height: 75px;
   font-size: 15px;
+  border-radius: 10px;
 }
 
 #instructions {
   text-align: center;
 }
-table  { margin-top:  20px; display: inline-block; overflow: auto; }
+
+table  {
+  margin-top: 20px;
+  display: inline-block;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 225px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 45%;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 37px;
+  font-weight: bold;
+  color: #212529;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  color:#212529
+}
+
+.card-product  > #odometer {
+  background-color: #212529;
+  color: white;
+  border: 5px solid white;
+  text-align: center;
+  font-size: 45px;
+  width: 45%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  margin-top: 0px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+#booking-card h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
