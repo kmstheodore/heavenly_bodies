@@ -6,6 +6,7 @@
 
         <th scope="col">Celestial Body</th>
         <th scope="col">Death Star Action</th>
+        <th scope="col">Add Your Celestial Body</th>
       </tr>
     </thead>
     <tbody>
@@ -17,6 +18,9 @@
 
           <%= link_to "Delete", "planets/#{planet[:id]}", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
         </td>
+        <td>
+          <%= link_to "Add Planet", new_planet_path, class:"btn btn primary" %>
+          </td>
       </tr>
       <% end %>
     </tbody>
