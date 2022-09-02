@@ -3,25 +3,23 @@
       <div class="title">
         <h2><%=current_user.first_name%>'s Upcoming Trips </h2>
       </div>
-  <table class="table table-striped" style="overflow-y: scroll; height: 62vh;">
-
-   <thead>
-      <tr>
-        <th scope="col">Planet</th>
-        <th scope="col">Start Date</th>
-        <th scope="col">End Date</th>
-      </tr>
-    </thead>
-      <tbody>
-        <% @bookings.each do |book| %>
+      <table id="booking-table" style="width: 100%;height: 62vh;border;">
+      <thead>
           <tr>
-            <th scope="row"></th>
-            <td><%= book.planet.name %></td>
-            <td><%= book.start_date.strftime('%m/%d/%Y') %></td>
-            <td><%= book.end_date.strftime('%m/%d/%Y') %></td>
+            <th scope="col">Planet</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
           </tr>
-        <% end %>
-      </tbody>
-  </table>
+        </thead>
+          <tbody>
+            <% @bookings.each do |book| %>
+              <tr>
+                <td><%= book.planet.name %></td>
+                <td><%= book.start_date.strftime('%m/%d/%Y') %></td>
+                <td><%= book.end_date.strftime('%m/%d/%Y') %></td>
+              </tr>
+            <% end %>
+          </tbody>
+      </table>
   </div>
 </div>

@@ -7,14 +7,18 @@
   background-image: url(https://res.cloudinary.com/do31e5zv5/image/upload/v1662026707/mxrdxit7hp8oxitrjtgo.jpg);
 }
 
-.table {
-  width: 650px;
+#booking-table {
+  margin-top: 20px;
+  padding: 10px;
+  color: #2b3035;
   font-family: Arial, Helvetica, sans-serif;
-  border-style: solid;
-  border-radius: 10px;
   background-color: white;
   font-size: medium;
+  border-radius: 10px;
   box-shadow: 5px 10px #2b3035;
+  border-color: white;
+  text-indent: 0;
+  border-spacing: 0;
 }
 
 .title {
@@ -28,4 +32,13 @@ h2 {
   font-weight: bold;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+td {
+  padding: 20px;
 }
