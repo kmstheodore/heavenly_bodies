@@ -54,7 +54,7 @@
   font-size: 15px;
 }
 
-.planet > a > img {
+.planet > img  {
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -113,11 +113,12 @@ table  {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border: 5px solid white;
 }
 
 .card-product img {
   height: 100%;
-  width: 45%;
+  width: 650px;
   object-fit: cover;
 }
 
@@ -134,13 +135,12 @@ table  {
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
-  color:#212529
+  color:#212529;
 }
 
 .card-product  > #odometer {
   background-color: #212529;
   color: white;
-  border: 5px solid white;
   text-align: center;
   font-size: 45px;
   width: 45%;
@@ -156,4 +156,8 @@ table  {
 
 #booking-card h2 {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.odometer{
+  vertical-align: middle;
 }

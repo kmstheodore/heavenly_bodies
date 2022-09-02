@@ -3,8 +3,6 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import "bootstrap"
 
-
-
 window.addEventListener('scroll', function() {
 	var element = document.querySelector('#odometer');
 	var position = element.getBoundingClientRect();
