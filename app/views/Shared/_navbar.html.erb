@@ -20,6 +20,13 @@
               </li>
 
               <li>
+                <%= link_to bookings_path, class: "dropdown-item" do %>
+                  <i class="fa-solid fa-globe"></i>
+                  My Bookings
+                <% end %>
+              </li>
+
+              <li>
                 <%= link_to edit_user_registration_path, class: "dropdown-item" do %>
                   <i class="fa-solid fa-user-gear"></i>
                   Settings

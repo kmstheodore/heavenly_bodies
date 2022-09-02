@@ -1,9 +1,9 @@
 class BookingsController < ApplicationController
-  before_action :set_booking, only: %i[ show edit update destroy ]
+  before_action :set_booking, only: %i[show edit update destroy]
 
   # GET /bookinges or /bookinges.json
   def index
-    @bookinges = Booking.where(user_id: current_user.id)
+    @bookings = Booking.where(user_id: current_user)
   end
 
   # GET /bookinges/1 or /bookinges/1.json
