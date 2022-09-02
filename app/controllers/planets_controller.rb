@@ -1,6 +1,6 @@
 class PlanetsController < ApplicationController
   def index
-    @planets = Planet.all
+    @owned_planets = current_user.planets
   end
 
   def show
@@ -26,6 +26,7 @@ class PlanetsController < ApplicationController
     @planet.destroy
     redirect_to planets_path(@planet)
   end
+
 
   private
 

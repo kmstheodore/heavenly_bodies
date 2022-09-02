@@ -1,1 +1,25 @@
-<p>hellow </p>
+<div class="bookings-page">
+  <div class="table-w-heading">
+<table class="table table-striped">
+    <thead>
+      <tr>
+
+        <th scope="col">Name</th>
+        <th scope="col">Death Star Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @owned_planets.each do |planet| %>
+      <tr>
+
+        <td><a href="planets/<%= planet[:id] %>"><%= planet[:name] %></a></td>
+        <td>
+
+          <%= link_to "Delete", "planets/#{planet[:id]}", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+</div>
