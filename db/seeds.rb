@@ -24,6 +24,8 @@ user10 = User.create!(first_name: "al", last_name: "P.", email: "aasd.jc@me.com"
 
 puts "users created!"
 
+puts "creating planet..."
+
 planet1 = Planet.create!(
   user: user1,
   name: "Uranus",
@@ -32,7 +34,7 @@ planet1 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661939393/rbzvonfl6kcpwpuag7xy.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661939393/rbzvonfl6kcpwpuag7xy.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661939393/rbzvonfl6kcpwpuag7xy.jpg")
 planet1.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -45,7 +47,7 @@ planet2 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661866647/az3y4t264gk34bbytpni.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661866647/az3y4t264gk34bbytpni.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661866647/az3y4t264gk34bbytpni.jpg")
 planet2.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -62,7 +64,7 @@ planet3 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661867998/zkthm6cbtvzaianuwup7.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661867998/zkthm6cbtvzaianuwup7.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661867998/zkthm6cbtvzaianuwup7.jpg")
 planet3.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -77,7 +79,7 @@ planet4 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661868167/b4ffalqu559lb66n2itb.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661868167/b4ffalqu559lb66n2itb.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661868167/b4ffalqu559lb66n2itb.jpg")
 planet4.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -93,14 +95,8 @@ planet5 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940232/popg9rvdj3oroq8pyame.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661940232/popg9rvdj3oroq8pyame.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940232/popg9rvdj3oroq8pyame.jpg")
 planet5.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
-
-
-
-
-
-
 
 
 
@@ -112,7 +108,7 @@ planet6 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940350/c4vht2qwvmowkemsjvqo.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661940350/c4vht2qwvmowkemsjvqo.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940350/c4vht2qwvmowkemsjvqo.jpg")
 planet6.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -129,7 +125,7 @@ planet7 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661941347/jg8dgrgcenxgxro58au8.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661941347/jg8dgrgcenxgxro58au8.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661941347/jg8dgrgcenxgxro58au8.jpg")
 planet7.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -145,7 +141,7 @@ planet8 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940829/dd6vhbjoox8qxyfjrrhg.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661940829/dd6vhbjoox8qxyfjrrhg.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940829/dd6vhbjoox8qxyfjrrhg.jpg")
 planet8.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -161,7 +157,7 @@ planet9 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940950/xm6pw9docfq9jdgrhcmj.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661940950/xm6pw9docfq9jdgrhcmj.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661940950/xm6pw9docfq9jdgrhcmj.jpg")
 planet9.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
 
 
@@ -175,5 +171,7 @@ planet10 = Planet.create!(
   image: "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661941221/ncpqfz9gevvwymr8nft2.jpg"
 )
 
-file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1661941221/ncpqfz9gevvwymr8nft2.jpg")
+file = URI.open("https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,b_rgb:262c35/v1661941221/ncpqfz9gevvwymr8nft2.jpg")
 planet10.photo.attach(io: file, filename: "nes.png", content_type: "image/png")
+
+puts "planets created!"

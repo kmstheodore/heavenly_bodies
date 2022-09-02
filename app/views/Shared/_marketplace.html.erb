@@ -1,9 +1,7 @@
 <body>
-  <div>
-
-  </div>
   <div class="dashboard-container">
     <div class="dashboard">
+
       <div id="booking-card">
         <h2>Your Upcoming Trips <%=current_user.first_name%></h2>
         <table class="table table-striped" style="overflow-y: scroll; height: 62vh;">
@@ -27,17 +25,19 @@
           </tbody>
         </table>
       </div>
+
       <div id="desc-card">
         <div class="system-flex-container">
-        <% @planets.each do |planet| %>
-          <div class="planet">
-            <%=link_to planet_path(planet) do%>
-              <%= image_tag "#{planet.image}", class:"planet-pic"%>
-            <% end %>
-          </div>
-        <% end %>
+          <% @planets.each do |planet| %>
+            <div class="planet">
+              <%=link_to planet_path(planet) do %>
+              <%= cl_image_tag planet.photo.key, width:150, height:150, class:"planet-pic"%>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
+
     </div>
   </div>
 </body>
