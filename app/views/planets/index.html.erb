@@ -1,12 +1,16 @@
 <div class="bookings-page">
-  <div class="table-w-heading">
+<h1 style="background: white; border-radius: 15px; margin-right: 100px; padding: 10px;"><%= link_to "Add Planet", new_planet_path, class:"btn btn primary" %></h1>
+  <div class="table-w-heading" style="background: white; border-radius: 10px; overflow-y:scroll">
 <table class="table table-striped" style="width: 100%;height: 100%;border; overflow-y:scroll">
     <thead>
       <tr>
 
         <th scope="col">Celestial Body</th>
         <th scope="col">Death Star Action</th>
-        <th scope="col">Add Your Celestial Body</th>
+
+
+          </td>
+      </tr></th>
       </tr>
     </thead>
     <tbody>
@@ -16,12 +20,9 @@
         <td><%= planet[:name] %></a></td>
         <td>
 
-          <%= link_to "Delete", "planets/#{planet[:id]}", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+          <%= link_to "Delete", "planets/#{planet[:id]}", class:"btn btn primary", data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
         </td>
-        <td>
-          <%= link_to "Add Planet", new_planet_path, class:"btn btn primary" %>
-          </td>
-      </tr>
+
       <% end %>
     </tbody>
   </table>
