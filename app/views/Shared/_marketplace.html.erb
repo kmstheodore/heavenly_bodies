@@ -32,7 +32,7 @@
         <% @planets.each do |planet| %>
           <div class="planet">
           <%=link_to "#{planet.name}", planet_path(planet)%>
-          <%= cl_image_tag planet.photo.key %>
+          <%= image_tag "#{planet.image}" %>
           </div>
         <% end %>
         </div>
