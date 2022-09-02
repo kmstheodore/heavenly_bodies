@@ -1,1 +1,13 @@
 <p>hellow </p>
+<div class="owned-planets" style="display: flex;">
+<% @owned_planets.each do |planet| %>
+  <div class="planet-owned">
+  <%= planet.name %>
+  <%= image_tag "#{planet.image}", class:"planet-pic"%>
+  <%= link_to "Delete",
+  planets_path,
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+  </div>
+<% end %>
+</div>
