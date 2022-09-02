@@ -1,20 +1,18 @@
 <body>
-  <div>
-
-  </div>
   <div class="dashboard-container">
     <div class="dashboard">
       <div id="desc-card">
         <div class="system-flex-container">
-        <% @planets.each do |planet| %>
-          <div class="planet">
-            <%=link_to planet_path(planet) do%>
-              <%= image_tag "#{planet.image}", class:"planet-pic"%>
-            <% end %>
-          </div>
-        <% end %>
+          <% @planets.each do |planet| %>
+            <div class="planet">
+              <%=link_to planet_path(planet) do %>
+              <%= cl_image_tag planet.photo.key, width:150, height:150, class:"planet-pic"%>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
+
     </div>
   </div>
 </body>
