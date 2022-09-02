@@ -21,7 +21,6 @@
 }
 
 .card {
-  box-shadow: 2px 2px 5px lightgray;
   height: 400px;
   width: 300px;
   text-align: center;
@@ -77,16 +76,15 @@
 .dashboard > #booking-card {
   border-style: solid;
   border-radius: 15px;
-  background-color: #F1F1F1;
+  background-color: #000000;
   width: 45vh;
   margin: 10px;
   margin-left: 30px;
   text-align: center;
   line-height: 75px;
   font-size: 15px;
-  box-shadow: 2px 2px 2px lightgray;
   padding-top: 20px;
-  color: #212529;
+  color: white;
 }
 
 .dashboard > #desc-card {
@@ -109,51 +107,7 @@ table  {
   margin-top: 20px;
   display: inline-block;
   overflow: auto;
-  border-radius: 10px;
-}
-
-.card-product {
-  overflow: hidden;
-  height: 225px;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  border: 5px solid white;
-}
-
-.card-product img {
-  height: 100%;
-  width: 650px;
-  object-fit: cover;
-}
-
-.card-product h2 {
-  font-size: 37px;
-  font-weight: bold;
-  color: #212529;
-  margin: 0;
-}
-
-.card-product p {
-  font-size: 18px;
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
-  color:#212529;
-}
-
-.card-product  > #odometer {
-  background-color: #212529;
   color: white;
-  text-align: center;
-  font-size: 45px;
-  width: 45%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 1;
-  margin-top: 0px;
 }
 
 .card-product .card-product-infos {
@@ -162,8 +116,5 @@ table  {
 
 #booking-card h2 {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.odometer{
-  vertical-align: middle;
+  color: white;
 }
