@@ -10,7 +10,7 @@
           <div class="booking-cta">
             <h1><%= @planet.name %></h1>
             <p>  <%= @planet.desc%> </p>
-            <h1>From £<%= @planet.price%></h1>
+            <h1>From £<%= @planet.price.truncate() %></h1>
           </div>
         </div>
         <div class="col-md-4 col-md-pull-7">

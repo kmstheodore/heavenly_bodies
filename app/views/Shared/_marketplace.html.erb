@@ -16,3 +16,23 @@
     </div>
   </div>
 </body>
+
+<%# <script>
+$(document).ready(function(){
+  $("#div8").click(function(e){
+    var redirection = $(this).attr('http://localhost:3000/planets/8');
+    e.preventDefault();
+    $("#div1").fadeOut();
+    $("#div2").fadeOut();
+    $("#div3").fadeOut();
+    $("#div4").fadeOut();
+    $("#div5").fadeOut();
+    $("#div6").fadeOut();
+    $("#div7").fadeOut();
+    $("#div9").fadeOut();
+    $("#div10").fadeOut("slow", function() {
+      location.href = redirection;
+     });
+    });
+  });
+</script> %>
