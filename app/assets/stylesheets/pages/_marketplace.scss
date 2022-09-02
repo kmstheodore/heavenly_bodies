@@ -43,7 +43,6 @@
   flex-wrap: wrap;
   height: 600px;
   width: 100%;
-  overflow-y: auto;
  }
 
 .system-flex-container > .planet {
@@ -54,7 +53,7 @@
   font-size: 15px;
 }
 
-.planet > img  {
+.planet-pic  {
   height: 150px;
   width: 150px;
   border-radius: 50%;
