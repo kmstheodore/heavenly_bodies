@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   end
 
   root to: 'pages#home'
-
-
+  get 'explore', to: 'pages#explore'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

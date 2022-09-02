@@ -9,6 +9,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
+
+        <li class="nav-link" style="color:white">
+          <%= link_to explore_path, class: "dropdown-item" do %>
+            <i class="fa-solid fa-user-astronaut"></i>
+                  Explore Space
+          <% end %>
+        </li>
+
           <li class="nav-item dropdown">
             <%= image_tag "https://res.cloudinary.com/do31e5zv5/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1662030685/kgxnkhhd3odr2xjcxw5z.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
