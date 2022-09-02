@@ -5,4 +5,7 @@ class PagesController < ApplicationController
     @booking = Booking.new
     @bookings = Booking.all
   end
+
+  def explore
+  end
 end
