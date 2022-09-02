@@ -1,6 +1,6 @@
 
-<h2>Add planet</h2>
-
+<div class="page">
+  <div class="form">
 <%= simple_form_for @planet do |f| %>
   <%= f.error_notification %>
 
@@ -12,6 +12,9 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Add Planet" %>
+    <%= f.button :submit, "Add Planet",  class:"form-btn" %>
   </div>
 <% end %>
+
+  </div>
+</div>
