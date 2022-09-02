@@ -31,14 +31,8 @@
         <div class="system-flex-container">
         <% @planets.each do |planet| %>
           <div class="planet">
-<<<<<<< HEAD
-          <%=link_to planet_path(planet) do %>
-          <%= cl_image_tag planet.photo.key %>
-          <% end %>
-=======
           <%=link_to "#{planet.name}", planet_path(planet)%>
           <%= image_tag "#{planet.image}" %>
->>>>>>> facd782fd71178cb4b07069c879b5b8d2958aca2
           </div>
         <% end %>
         </div>

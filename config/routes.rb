@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :bookings
 
 
-  resources :planets, only: [:show, :new, :create, :destroy] do
+  resources :planets, only: [:show, :new, :create, :destroy, :index] do
     resources :bookings, only: [:create]
   end
 
